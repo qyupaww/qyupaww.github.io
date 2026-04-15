@@ -31,7 +31,7 @@ const PROJECTS = [
 
 const SKILLS = [
   { group: "Core", items: ["Dart", "Flutter"] },
-  { group: "Architecture & State", items: ["Clean Architecture", "BLoC", "Cubit", "Atomic Design Pattern"] },
+  { group: "Architecture & State", items: ["Clean Architecture", "Atomic Design Pattern", "BLoC", "Cubit"] },
   { group: "Testing", items: ["Unit Testing", "Widget Testing"] },
   { group: "Features", items: ["Local Storage", "Localization", "Firebase", "Firestore", "Flavors", "RevenueCat", "AdMob"] },
   { group: "Tools", items: ["Play Console", "Figma", "Shorebird", "Postman", "Git", "GitHub", "CI/CD"] }
