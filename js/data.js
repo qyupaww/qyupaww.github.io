@@ -13,6 +13,7 @@ const PROJECTS = [
       { label: "RevenueCat", style: "" },
       { label: "AdMob", style: "" },
       { label: "Localization", style: "" },
+      { label: "Flavors", style: "" },
       { label: "In Dev", style: "dark" },
     ],
     isPlaceholder: false
