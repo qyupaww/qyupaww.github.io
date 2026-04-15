@@ -1,12 +1,18 @@
 const PROJECTS = [
   {
     icon: "📱",
-    title: "EZFO Android",
+    title: "EZFO - Money & Budget Manager",
     desc: "Production app with AdMob monetization. Built with Clean Architecture & BLoC state management on Flutter.",
     tags: [
       { label: "Flutter", style: "" },
+      { label: "Clean Architecture", style: "" },
+      { label: "BLoC & Cubit", style: "" },
+      { label: "Atomic Design Pattern", style: "" },
+      { label: "Firebase Auth", style: "" },
+      { label: "Firestore", style: "" },
+      { label: "RevenueCat", style: "" },
       { label: "AdMob", style: "" },
-      { label: "BLoC", style: "" },
+      { label: "Localization", style: "" },
       { label: "In Dev", style: "dark" },
     ],
     isPlaceholder: false
@@ -24,8 +30,9 @@ const PROJECTS = [
 
 const SKILLS = [
   { group: "Core", items: ["Dart", "Flutter"] },
-  { group: "Architecture & State", items: ["Clean Architecture", "BLoC", "Cubit", "Atomic Design"] },
-  { group: "Features", items: ["Local Storage", "Localization", "Firebase", "Flavors", "RevenueCat", "AdMob"] },
+  { group: "Architecture & State", items: ["Clean Architecture", "BLoC", "Cubit", "Atomic Design Pattern"] },
+  { group: "Testing", items: ["Unit Testing", "Widget Testing"] },
+  { group: "Features", items: ["Local Storage", "Localization", "Firebase", "Firestore", "Flavors", "RevenueCat", "AdMob"] },
   { group: "Tools", items: ["Play Console", "Figma", "Shorebird", "Postman", "Git", "GitHub", "CI/CD"] }
 ];
 
