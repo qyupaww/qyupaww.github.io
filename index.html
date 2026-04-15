@@ -1,293 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Faisal Rahman — Mobile Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    :root {
-      --yellow: #FFE500;
-      --black: #0a0a0a;
-      --white: #ffffff;
-      --gray: #f5f5f0;
-      --border: 3px solid #0a0a0a;
-      --shadow: 5px 5px 0 #0a0a0a;
-      --shadow-lg: 7px 7px 0 #0a0a0a;
-    }
-    html { scroll-behavior: smooth; }
-    body { font-family: 'Space Grotesk', sans-serif; background: #fff; color: #000; overflow-x: hidden; }
-
-    nav {
-      position: sticky; top: 0; z-index: 100;
-      background: var(--yellow); border-bottom: var(--border);
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 2rem; height: 54px;
-    }
-    .nav-logo { font-weight: 700; font-size: 1.05rem; }
-    .nav-links { display: flex; }
-    .nav-links a {
-      display: block; padding: 0 1.2rem; height: 54px; line-height: 54px;
-      font-weight: 700; font-size: 11px; text-decoration: none; color: var(--black);
-      border-left: 2px solid var(--black); text-transform: uppercase; letter-spacing: .08em;
-      transition: background .15s;
-    }
-    .nav-links a:hover { background: var(--black); color: var(--yellow); }
-
-    .hero-box {
-      border: var(--border); padding: 2.5rem 3rem; margin: 2.5rem 3rem 0;
-      background: var(--yellow); box-shadow: var(--shadow-lg);
-    }
-    .hero-name { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 700; line-height: 1.0; letter-spacing: -.03em; margin-bottom: .75rem; }
-    .hero-role { display: inline-block; background: var(--black); color: var(--yellow); font-size: .9rem; font-weight: 700; padding: 4px 14px; margin-bottom: 1.25rem; }
-    .hero-desc { font-size: 14px; line-height: 1.7; color: #222; max-width: 520px; margin-bottom: 1.5rem; }
-
-    .btn {
-      display: inline-block; border: var(--border); padding: 9px 20px;
-      font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 13px;
-      text-decoration: none; color: var(--black); background: var(--white);
-      box-shadow: var(--shadow); transition: transform .1s, box-shadow .1s; cursor: pointer; margin: 0 8px 0 0;
-    }
-    .btn:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow-lg); }
-    .btn:active { transform: translate(2px,2px); box-shadow: 2px 2px 0 var(--black); }
-    .btn.dark { background: var(--black); color: var(--yellow); }
-    .btn.yellow { background: var(--yellow); }
-
-    .tabs-wrap { padding: 2.5rem 3rem 0; }
-    .tabs-nav { display: flex; border: var(--border); width: fit-content; overflow: hidden; margin-bottom: 2rem; }
-    .tab-btn {
-      padding: 9px 20px; font-weight: 700; font-size: 11px;
-      border-right: 2px solid var(--black); cursor: pointer;
-      background: #fff; transition: background .12s;
-      text-transform: uppercase; letter-spacing: .07em; user-select: none;
-    }
-    .tab-btn:last-child { border-right: none; }
-    .tab-btn.active, .tab-btn:hover { background: var(--yellow); }
-
-    .tab-page { display: none; padding-bottom: 4rem; }
-    .tab-page.active { display: block; }
-
-    .section-label {
-      font-size: 10px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
-      border-bottom: 3px solid var(--black); padding-bottom: 6px; margin-bottom: 1.25rem;
-    }
-
-    .card {
-      border: var(--border); padding: 1.25rem; background: #fff;
-      box-shadow: var(--shadow); transition: transform .12s, box-shadow .12s; margin-bottom: 1rem;
-    }
-    .card:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow-lg); }
-
-    .proj-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-    .proj-card {
-      border: var(--border); background: #fff; box-shadow: var(--shadow);
-      overflow: hidden; transition: transform .12s, box-shadow .12s;
-    }
-    .proj-card:hover { transform: translate(-2px,-2px); box-shadow: var(--shadow-lg); }
-    .proj-thumb {
-      height: 100px; background: #111; display: flex; align-items: center;
-      justify-content: center; font-size: 2.2rem; border-bottom: var(--border); color: var(--yellow);
-    }
-    .proj-body { padding: 1.25rem; }
-    .proj-title { font-weight: 700; font-size: 1rem; margin-bottom: .4rem; }
-    .proj-desc { font-size: 12px; line-height: 1.6; color: #444; margin-bottom: .9rem; }
-
-    .tag {
-      display: inline-block; border: 2.5px solid var(--black); padding: 3px 9px;
-      font-size: 10px; font-weight: 700; background: var(--yellow);
-      text-transform: uppercase; letter-spacing: .04em; margin: 2px;
-    }
-    .tag.dark { background: var(--black); color: var(--yellow); }
-    .tag.ghost { background: var(--gray); border-color: #bbb; color: #bbb; }
-
-    .skill-group { margin-bottom: 1.1rem; }
-    .skill-group:last-child { margin-bottom: 0; }
-    .skill-group-label { font-size: 10px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #888; margin-bottom: 6px; }
-    .skill-pill { display: inline-block; border: 2px solid var(--black); padding: 4px 11px; font-size: 12px; font-weight: 700; margin: 3px; background: var(--gray); }
-
-    .quote-box {
-      border-left: 5px solid var(--black); padding: .75rem 1rem;
-      background: var(--gray); margin-bottom: 1.25rem;
-      font-size: 13px; line-height: 1.65; font-style: italic;
-    }
-
-    .contact-row {
-      display: flex; align-items: center; gap: 10px;
-      padding: 12px 1.25rem; border-bottom: 2px solid var(--black);
-      font-size: 13px; font-weight: 600;
-    }
-    .contact-row:last-child { border-bottom: none; }
-    .contact-icon {
-      width: 36px; height: 36px; border: 2.5px solid var(--black); background: var(--yellow);
-      display: flex; align-items: center; justify-content: center;
-      font-weight: 700; font-size: 10px; flex-shrink: 0;
-    }
-    .contact-label { font-size: 10px; color: #999; font-weight: 700; text-transform: uppercase; letter-spacing: .05em; }
-    .contact-val { font-weight: 700; font-size: 13px; }
-    .contact-val a { color: var(--black); text-decoration: none; }
-    .contact-val a:hover { text-decoration: underline; }
-
-    .cta-box { border: var(--border); background: var(--yellow); padding: 1.75rem; box-shadow: var(--shadow-lg); margin-top: 1.5rem; }
-    .cta-box h3 { font-weight: 700; font-size: 1.2rem; margin-bottom: .5rem; }
-    .cta-box p { font-size: 13px; line-height: 1.65; margin-bottom: 1.25rem; color: #222; }
-
-    .stripe {
-      background: repeating-linear-gradient(45deg, var(--black), var(--black) 2px, transparent 2px, transparent 13px);
-      height: 9px; border-top: 2px solid var(--black); border-bottom: 2px solid var(--black); margin: 2.5rem 0 0;
-    }
-
-    footer {
-      background: var(--black); color: var(--yellow); padding: 1.5rem 3rem;
-      display: flex; justify-content: space-between; align-items: center;
-    }
-    footer .logo { font-weight: 700; font-size: 1rem; }
-    footer p { font-size: 12px; color: #666; }
-
-    @media (max-width: 700px) {
-      nav { padding: 0 1rem; }
-      .nav-links a { padding: 0 .8rem; font-size: 10px; }
-      .hero-box, .tabs-wrap { margin: 1.5rem 1rem 0; padding: 1.5rem; }
-      .tab-page { padding-bottom: 2.5rem; }
-      footer { flex-direction: column; gap: .5rem; text-align: center; padding: 1.5rem; }
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<nav>
-  <div class="nav-logo">FR.</div>
-  <div class="nav-links">
-    <a href="#" onclick="switchTab('projects');return false;">Projects</a>
-    <a href="#" onclick="switchTab('skills');return false;">Skills</a>
-    <a href="#" onclick="switchTab('contact');return false;">Contact</a>
-  </div>
-</nav>
+  <nav>
+    <div class="nav-logo">Qyupaww</div>
+    <div class="nav-links">
+      <a href="#" onclick="switchTab('projects');return false;">Projects</a>
+      <a href="#" onclick="switchTab('skills');return false;">Skills</a>
+      <a href="#" onclick="switchTab('contact');return false;">Contact</a>
+    </div>
+  </nav>
 
-<div class="hero-box">
-  <div class="hero-name">Faisal<br>Rahman</div>
-  <div class="hero-role">Mobile Developer</div>
-  <p class="hero-desc">I don't just build screens — I focus on software craftsmanship, implementing Clean Architecture, robust state management, and production-grade features.</p>
-  <a class="btn dark" href="https://github.com/qyupaww" target="_blank">GitHub</a>
-  <a class="btn yellow" href="#" onclick="switchTab('contact');return false;">Hire me</a>
-</div>
-
-<div class="tabs-wrap">
-  <div class="tabs-nav">
-    <div class="tab-btn active" onclick="switchTab('projects')">Projects</div>
-    <div class="tab-btn" onclick="switchTab('skills')">Skills</div>
-    <div class="tab-btn" onclick="switchTab('contact')">Contact</div>
+  <div class="hero-box">
+    <div class="hero-name">Faisal<br>Rahman</div>
+    <div class="hero-role">Mobile Developer</div>
+    <p class="hero-desc">I don't just build screens — I focus on software craftsmanship, implementing Clean
+      Architecture, robust state management, and production-grade features.</p>
+    <a class="btn dark" href="https://github.com/qyupaww" target="_blank">GitHub</a>
+    <a class="btn yellow" href="#" onclick="switchTab('contact');return false;">Hire me</a>
   </div>
 
-  <div class="tab-page active" id="tab-projects">
-    <div class="section-label">Projects</div>
-    <div class="proj-grid">
-      <div class="proj-card">
-        <div class="proj-thumb">&#128241;</div>
-        <div class="proj-body">
-          <div class="proj-title">EZFO Android</div>
-          <p class="proj-desc">Production app with AdMob monetization. Built with Clean Architecture & BLoC state management on Flutter.</p>
-          <span class="tag">Flutter</span>
-          <span class="tag">AdMob</span>
-          <span class="tag">BLoC</span>
-          <span class="tag dark">In Dev</span>
-        </div>
+  <div class="tabs-wrap">
+    <div class="tabs-nav">
+      <div class="tab-btn active" onclick="switchTab('projects')">Projects</div>
+      <div class="tab-btn" onclick="switchTab('skills')">Skills</div>
+      <div class="tab-btn" onclick="switchTab('contact')">Contact</div>
+    </div>
+
+    <div class="tab-page active" id="tab-projects">
+      <div class="section-label">Projects</div>
+      <div class="proj-grid" id="proj-grid-container">
+        <!-- Injected by data.js & app.js -->
       </div>
-      <div class="proj-card" style="border-style:dashed;box-shadow:none;background:var(--gray)">
-        <div class="proj-thumb" style="background:#eee;color:#ccc;border-bottom:2px dashed #ccc">+</div>
-        <div class="proj-body">
-          <div class="proj-title" style="color:#bbb">Coming soon</div>
-          <p class="proj-desc" style="color:#bbb">Next project is in the works. Stay tuned!</p>
-          <span class="tag ghost">TBA</span>
-        </div>
+    </div>
+
+    <div class="tab-page" id="tab-skills">
+      <div class="section-label">Skills</div>
+      <div class="quote-box">"I don't just build screens — I focus on software craftsmanship."</div>
+      <div class="card" id="skills-container">
+        <!-- Injected by data.js & app.js -->
+      </div>
+    </div>
+
+    <div class="tab-page" id="tab-contact">
+      <div class="section-label">Contact</div>
+      <div class="card" style="padding:0;overflow:hidden" id="contacts-container">
+        <!-- Injected by data.js & app.js -->
+      </div>
+      <div class="cta-box">
+        <h3>Open to opportunities</h3>
+        <p>Freelance, full-time, atau kolaborasi project Flutter. Punya ide app? Let's build something great together.
+        </p>
+        <a class="btn dark" href="mailto:hello@qyupaww.github.io">Send message</a>
       </div>
     </div>
   </div>
 
-  <div class="tab-page" id="tab-skills">
-    <div class="section-label">Skills</div>
-    <div class="quote-box">"I don't just build screens — I focus on software craftsmanship."</div>
-    <div class="card">
-      <div class="skill-group">
-        <div class="skill-group-label">Core</div>
-        <span class="skill-pill">Dart</span>
-        <span class="skill-pill">Flutter</span>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-label">Architecture & State</div>
-        <span class="skill-pill">Clean Architecture</span>
-        <span class="skill-pill">BLoC</span>
-        <span class="skill-pill">Cubit</span>
-        <span class="skill-pill">Atomic Design</span>
-      </div>
-      <div class="skill-group">
-        <div class="skill-group-label">Features</div>
-        <span class="skill-pill">Local Storage</span>
-        <span class="skill-pill">Localization</span>
-        <span class="skill-pill">Firebase</span>
-        <span class="skill-pill">RevenueCat</span>
-        <span class="skill-pill">AdMob</span>
-      </div>
-      <div class="skill-group" style="margin-bottom:0">
-        <div class="skill-group-label">Tools</div>
-        <span class="skill-pill">Play Console</span>
-        <span class="skill-pill">Figma</span>
-        <span class="skill-pill">Git</span>
-        <span class="skill-pill">GitHub</span>
-      </div>
-    </div>
-  </div>
+  <div class="stripe"></div>
 
-  <div class="tab-page" id="tab-contact">
-    <div class="section-label">Contact</div>
-    <div class="card" style="padding:0;overflow:hidden">
-      <div class="contact-row">
-        <div class="contact-icon">GH</div>
-        <div>
-          <div class="contact-label">GitHub</div>
-          <div class="contact-val"><a href="https://github.com/qyupaww" target="_blank">github.com/qyupaww</a></div>
-        </div>
-      </div>
-      <div class="contact-row">
-        <div class="contact-icon">WB</div>
-        <div>
-          <div class="contact-label">Website</div>
-          <div class="contact-val"><a href="https://qyupaww.github.io" target="_blank">qyupaww.github.io</a></div>
-        </div>
-      </div>
-      <div class="contact-row">
-        <div class="contact-icon">ID</div>
-        <div>
-          <div class="contact-label">Location</div>
-          <div class="contact-val">Sumedang, Jawa Barat, Indonesia</div>
-        </div>
-      </div>
-    </div>
-    <div class="cta-box">
-      <h3>Open to opportunities</h3>
-      <p>Freelance, full-time, atau kolaborasi project Flutter. Punya ide app? Let's build something great together.</p>
-      <a class="btn dark" href="mailto:hello@qyupaww.github.io">Send message</a>
-    </div>
-  </div>
-</div>
+  <footer>
+    <div class="logo">FR.</div>
+    <p>© 2026 Qyupaww.</p>
+  </footer>
 
-<div class="stripe"></div>
-
-<footer>
-  <div class="logo">FR.</div>
-  <p>© 2026 Qyupaww.</p>
-</footer>
-
-<script>
-  function switchTab(id) {
-    document.querySelectorAll('.tab-page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById('tab-' + id).classList.add('active');
-    const idx = ['projects','skills','contact'].indexOf(id);
-    document.querySelectorAll('.tab-btn')[idx].classList.add('active');
-  }
-</script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 
 </body>
+
 </html>
