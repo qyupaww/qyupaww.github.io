@@ -6,6 +6,7 @@ const PROJECTS = [
     tags: [
       { label: "Flutter", style: "" },
       { label: "Clean Architecture", style: "" },
+      { label: "Morpheme Lite", style: "" },
       { label: "BLoC & Cubit", style: "" },
       { label: "Atomic Design Pattern", style: "" },
       { label: "Firebase Auth", style: "" },
@@ -25,6 +26,8 @@ const PROJECTS = [
     desc: "A modern, robust Human Resource Information System (HRIS) mobile application built with Flutter and the Morpheme Lite framework. This application features location-based attendance tracking, real-time presence monitoring, and comprehensive employee history and profile management.",
     tags: [
       { label: "Flutter", style: "" },
+      { label: "Morpheme Lite", style: "" },
+      { label: "Restful", style: "" },
       { label: "Clean Architecture", style: "" },
       { label: "BLoC & Cubit", style: "" },
       { label: "Atomic Design Pattern", style: "" },
@@ -47,10 +50,9 @@ const PROJECTS = [
 
 const SKILLS = [
   { group: "Core", items: ["Dart", "Flutter"] },
-  { group: "Architecture & State", items: ["Clean Architecture", "Atomic Design Pattern", "BLoC", "Cubit"] },
+  { group: "Architecture & State", items: ["Clean Architecture", "Atomic Design Pattern", "Dependency Injection (GetIt)", "BLoC", "Cubit"] },
   { group: "Testing", items: ["Unit Testing", "Widget Testing"] },
-  { group: "Features", items: ["Local Storage", "Localization", "Firebase", "Firestore", "Flavors", "RevenueCat", "AdMob"] },
-  { group: "Tools", items: ["Play Console", "Figma", "Shorebird", "Postman", "Git", "GitHub", "CI/CD"] }
+  { group: "Familiar With", items: ["Local Storage", "Localization", "Firebase", "Firestore", "Flavors", "GoRouter", "RevenueCat", "AdMob", "Play Console", "Figma", "Shorebird", "Postman", "Git", "GitHub", "CI/CD", "Restful", "Morpheme Lite"] }
 ];
 
 const CONTACTS = [
