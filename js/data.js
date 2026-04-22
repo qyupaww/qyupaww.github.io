@@ -14,7 +14,7 @@ const PROJECTS = [
       { label: "AdMob", style: "" },
       { label: "Localization", style: "" },
       { label: "Flavors", style: "" },
-      { label: "In Dev", style: "dark" },
+      { label: "Production", style: "dark" },
     ],
     playstoreUrl: "https://play.google.com/store/apps/details?id=com.qyupaww.ezfo",
     isPlaceholder: false
