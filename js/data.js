@@ -16,6 +16,7 @@ const PROJECTS = [
       { label: "Flavors", style: "" },
       { label: "In Dev", style: "dark" },
     ],
+    playstoreUrl: "https://play.google.com/store/apps/details?id=com.qyupaww.ezfo",
     isPlaceholder: false
   },
   {

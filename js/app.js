@@ -11,7 +11,10 @@ function renderProjects() {
           <div class="proj-body">
             <div class="proj-title" style="color:#bbb">${proj.title}</div>
             <p class="proj-desc" style="color:#bbb">${proj.desc}</p>
-            ${proj.tags.map(t => `<span class="tag ${t.style}">${t.label}</span>`).join('')}
+            <div style="margin-bottom: 1rem;">
+              ${proj.tags.map(t => `<span class="tag ${t.style}">${t.label}</span>`).join('')}
+            </div>
+            ${proj.playstoreUrl ? `<a href="${proj.playstoreUrl}" target="_blank" class="btn dark" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem;">Get it on Play Store</a>` : ''}
           </div>
         </div>
       `;
@@ -22,7 +25,10 @@ function renderProjects() {
           <div class="proj-body">
             <div class="proj-title">${proj.title}</div>
             <p class="proj-desc">${proj.desc}</p>
-            ${proj.tags.map(t => `<span class="tag ${t.style}">${t.label}</span>`).join('')}
+            <div style="margin-bottom: 1rem;">
+              ${proj.tags.map(t => `<span class="tag ${t.style}">${t.label}</span>`).join('')}
+            </div>
+            ${proj.playstoreUrl ? `<a href="${proj.playstoreUrl}" target="_blank" class="btn dark" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem;">Get it on Play Store</a>` : ''}
           </div>
         </div>
       `;
