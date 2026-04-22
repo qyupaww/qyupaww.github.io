@@ -14,7 +14,10 @@ function renderProjects() {
             <div style="margin-bottom: 1rem;">
               ${proj.tags.map(t => `<span class="tag ${t.style}">${t.label}</span>`).join('')}
             </div>
-            ${proj.playstoreUrl ? `<a href="${proj.playstoreUrl}" target="_blank" class="btn dark" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem;">Get it on Play Store</a>` : ''}
+            <div>
+              ${proj.playstoreUrl ? `<a href="${proj.playstoreUrl}" target="_blank" class="btn dark" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem;">Get it on Play Store</a>` : ''}
+              ${proj.githubUrl ? `<a href="${proj.githubUrl}" target="_blank" class="btn" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem;">View on GitHub</a>` : ''}
+            </div>
           </div>
         </div>
       `;
@@ -28,7 +31,10 @@ function renderProjects() {
             <div style="margin-bottom: 1rem;">
               ${proj.tags.map(t => `<span class="tag ${t.style}">${t.label}</span>`).join('')}
             </div>
-            ${proj.playstoreUrl ? `<a href="${proj.playstoreUrl}" target="_blank" class="btn dark" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem;">Get it on Play Store</a>` : ''}
+            <div>
+              ${proj.playstoreUrl ? `<a href="${proj.playstoreUrl}" target="_blank" class="btn dark" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem;">Get it on Play Store</a>` : ''}
+              ${proj.githubUrl ? `<a href="${proj.githubUrl}" target="_blank" class="btn" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem;">View on GitHub</a>` : ''}
+            </div>
           </div>
         </div>
       `;

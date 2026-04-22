@@ -20,6 +20,21 @@ const PROJECTS = [
     isPlaceholder: false
   },
   {
+    icon: "📱",
+    title: "Flutter HRIS",
+    desc: "A modern, robust Human Resource Information System (HRIS) mobile application built with Flutter and the Morpheme Lite framework. This application features location-based attendance tracking, real-time presence monitoring, and comprehensive employee history and profile management.",
+    tags: [
+      { label: "Flutter", style: "" },
+      { label: "Clean Architecture", style: "" },
+      { label: "BLoC & Cubit", style: "" },
+      { label: "Atomic Design Pattern", style: "" },
+      { label: "Localization", style: "" },
+      { label: "Location Service", style: "" },
+    ],
+    githubUrl: "https://github.com/qyupaww/flutter-hris",
+    isPlaceholder: false
+  },
+  {
     icon: "+",
     title: "Coming soon",
     desc: "Next project is in the works. Stay tuned!",
