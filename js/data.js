@@ -27,7 +27,7 @@ const PROJECTS = [
     tags: [
       { label: "Flutter", style: "" },
       { label: "Morpheme Lite", style: "" },
-      { label: "Restful", style: "" },
+      { label: "REST API", style: "" },
       { label: "Clean Architecture", style: "" },
       { label: "BLoC & Cubit", style: "" },
       { label: "Atomic Design Pattern", style: "" },
@@ -52,7 +52,7 @@ const SKILLS = [
   { group: "Core", items: ["Dart", "Flutter"] },
   { group: "Architecture & State", items: ["Clean Architecture", "Atomic Design Pattern", "Dependency Injection (GetIt)", "BLoC", "Cubit"] },
   { group: "Testing", items: ["Unit Testing", "Widget Testing"] },
-  { group: "Familiar With", items: ["Local Storage", "Localization", "Firebase", "Firestore", "Flavors", "GoRouter", "RevenueCat", "AdMob", "Play Console", "Figma", "Shorebird", "Postman", "Git", "GitHub", "CI/CD", "Restful", "Morpheme Lite"] }
+  { group: "Familiar With", items: ["Local Storage", "Localization", "Firebase", "Firestore", "Flavors", "GoRouter", "RevenueCat", "AdMob", "Play Console", "Figma", "Shorebird", "Postman", "Git", "GitHub", "CI/CD", "REST API", "Morpheme Lite"] }
 ];
 
 const CONTACTS = [
