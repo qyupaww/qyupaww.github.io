@@ -2,7 +2,7 @@ const PROJECTS = [
   {
     icon: "📱",
     title: "EZFO - Money & Budget Manager",
-    desc: "Production app with AdMob monetization. Built with Clean Architecture & BLoC state management on Flutter.",
+    desc: "Production app with AdMob monetization. Simple personal Money & Budget Manager build with Flutter.",
     tags: [
       { label: "Flutter", style: "" },
       { label: "Clean Architecture", style: "" },
