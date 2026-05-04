@@ -2,7 +2,7 @@ const PROJECTS = [
   {
     icon: "📱",
     title: "EZFO - Money & Budget Manager",
-    desc: "Production app with AdMob monetization. Simple personal Money & Budget Manager build with Flutter.",
+    desc: "Production app with AdMob monetization. Simple personal Money & Budget Manager build with Flutter and the Morpheme Lite framework.",
     tags: [
       { label: "Flutter", style: "" },
       { label: "Clean Architecture", style: "" },
@@ -40,7 +40,7 @@ const PROJECTS = [
   {
     icon: "📱",
     title: "POKETTER",
-    desc: "Pokedex App Build with Flutter",
+    desc: "Pokedex App Build with Flutter and the Morpheme Lite framework",
     tags: [
       { label: "Flutter", style: "" },
       { label: "Morpheme Lite", style: "" },
