@@ -38,6 +38,21 @@ const PROJECTS = [
     isPlaceholder: false
   },
   {
+    icon: "📱",
+    title: "POKETTER",
+    desc: "Pokedex App Build with Flutter",
+    tags: [
+      { label: "Flutter", style: "" },
+      { label: "Morpheme Lite", style: "" },
+      { label: "REST API", style: "" },
+      { label: "Clean Architecture", style: "" },
+      { label: "BLoC & Cubit", style: "" },
+      { label: "Atomic Design Pattern", style: "" },
+    ],
+    githubUrl: "https://github.com/qyupaww/poketter",
+    isPlaceholder: false
+  },
+  {
     icon: "+",
     title: "Coming soon",
     desc: "Next project is in the works. Stay tuned!",
