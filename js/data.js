@@ -48,6 +48,7 @@ const PROJECTS = [
       { label: "Clean Architecture", style: "" },
       { label: "BLoC & Cubit", style: "" },
       { label: "Atomic Design Pattern", style: "" },
+      { label: "CI/CD", style: "" },
     ],
     githubUrl: "https://github.com/qyupaww/poketter",
     isPlaceholder: false
