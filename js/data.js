@@ -15,6 +15,7 @@ const PROJECTS = [
       { label: "AdMob", style: "" },
       { label: "Localization", style: "" },
       { label: "Flavors", style: "" },
+      { label: "Shorebird", style: "" },
       { label: "Production", style: "dark" },
     ],
     playstoreUrl: "https://play.google.com/store/apps/details?id=com.qyupaww.ezfo",
