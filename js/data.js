@@ -40,7 +40,7 @@ const PROJECTS = [
   {
     icon: "📱",
     title: "POKETTER",
-    desc: "Pokedex App Build with Flutter and the Morpheme Lite framework",
+    desc: "A Pokedex app Backed by PokeAPI showcasing production-grade Flutter architecture — Clean Architecture, BLoC state management, full test coverage, and CI/CD pipelines.",
     tags: [
       { label: "Flutter", style: "" },
       { label: "Morpheme Lite", style: "" },
