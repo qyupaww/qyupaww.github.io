@@ -2,7 +2,7 @@ const PROJECTS = [
   {
     icon: "📱",
     title: "EZFO - Money & Budget Manager",
-    desc: "Production app with AdMob monetization. Simple personal Money & Budget Manager build with Flutter and the Morpheme Lite framework.",
+    desc: "A comprehensive personal finance app built with Flutter and Morpheme Lite. Features include multi-wallet management, income/expense tracking, custom budgets & spending limits, custom category, interactive analytical reports, and a Smart Receipt Scanner powered by Google's Gemini AI & ML Kit for automated data entry. Monetized via AdMob with RevenueCat integration.",
     tags: [
       { label: "Flutter", style: "" },
       { label: "Clean Architecture", style: "" },
@@ -11,6 +11,8 @@ const PROJECTS = [
       { label: "Atomic Design Pattern", style: "" },
       { label: "Firebase Auth", style: "" },
       { label: "Firestore", style: "" },
+      { label: "Generative AI", style: "" },
+      { label: "OCR", style: "" },
       { label: "RevenueCat", style: "" },
       { label: "AdMob", style: "" },
       { label: "Localization", style: "" },
