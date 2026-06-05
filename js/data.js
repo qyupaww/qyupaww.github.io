@@ -9,6 +9,7 @@ const PROJECTS = [
       { label: "Morpheme Lite", style: "" },
       { label: "BLoC & Cubit", style: "" },
       { label: "Atomic Design Pattern", style: "" },
+      { label: "CI/CD", style: "" },
       { label: "Firebase Auth", style: "" },
       { label: "Firestore", style: "" },
       { label: "Generative AI", style: "" },
