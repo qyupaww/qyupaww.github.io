@@ -60,7 +60,7 @@ const PROJECTS = [
   {
     icon: "📱",
     title: "Digidex",
-    desc: "A comprehensive Digimon encyclopedia built with modern Android development standards. Showcasing a 100% Jetpack Compose declarative UI with a striking Neo-Brutalism aesthetic. Features include an offline-first architecture powered by Room database caching, highly optimized debounced search using Coroutines & Flow, and robust state management with MVVM.",
+    desc: "A comprehensive Digimon encyclopedia built with modern Android development standards. Showcasing a 100% Jetpack Compose. Features include an offline-first architecture powered by Room database caching, highly optimized debounced search using Coroutines & Flow, and robust state management with MVVM.",
     tags: [
       { label: "Kotlin", style: "" },
       { label: "Jetpack Compose", style: "" },
