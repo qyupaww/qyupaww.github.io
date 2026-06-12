@@ -86,9 +86,10 @@ const PROJECTS = [
 
 const SKILLS = [
   { group: "Core", items: ["Dart", "Flutter", "|", "Kotlin", "Jetpack Compose"] },
-  { group: "Architecture & State", items: ["Clean Architecture", "Atomic Design Pattern", "Dependency Injection (GetIt)", "BLoC", "Cubit"] },
+  { group: "Architecture & State", items: ["Clean Architecture", "Atomic Design Pattern", "Dependency Injection (GetIt)", "BLoC", "Cubit", "|", "MVVM", "Dagger HILT"] },
   { group: "Testing", items: ["Unit Testing", "Widget Testing"] },
-  { group: "Familiar With", items: ["Git", "GitHub", "REST API", "Firebase", "Firestore", "CI/CD", "Local Storage", "GoRouter", "Flavors", "Localization", "Morpheme Lite", "RevenueCat", "AdMob", "Play Console", "Shorebird", "Android Studio", "Postman", "Figma"] }
+  { group: "Framework Ecosystem", items: ["GoRouter", "Flavors", "Localization", "Morpheme Lite", "Shorebird", "Local Storage", "|", "Room Database", "Coroutines"] },
+  { group: "Tools & Services", items: ["Git", "GitHub", "REST API", "Firebase", "Firestore", "CI/CD", "RevenueCat", "AdMob", "Play Console", "Android Studio", "Postman", "Figma"] }
 ];
 
 const CONTACTS = [
