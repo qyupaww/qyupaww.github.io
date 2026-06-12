@@ -52,7 +52,7 @@ function renderSkills() {
     container.innerHTML += `
       <div class="skill-group" ${isLast ? 'style="margin-bottom:0"' : ''}>
         <div class="skill-group-label">${skill.group}</div>
-        ${skill.items.map(i => `<span class="skill-pill">${i}</span>`).join('')}
+        ${skill.items.map(i => i === "|" ? `<span class="skill-separator">|</span>` : `<span class="skill-pill">${i}</span>`).join('')}
       </div>
     `;
   });

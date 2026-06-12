@@ -58,6 +58,22 @@ const PROJECTS = [
     isPlaceholder: false
   },
   {
+    icon: "📱",
+    title: "Digidex",
+    desc: "A comprehensive Digimon encyclopedia built with modern Android development standards. Showcasing a 100% Jetpack Compose declarative UI with a striking Neo-Brutalism aesthetic. Features include an offline-first architecture powered by Room database caching, highly optimized debounced search using Coroutines & Flow, and robust state management with MVVM.",
+    tags: [
+      { label: "Kotlin", style: "" },
+      { label: "Jetpack Compose", style: "" },
+      { label: "MVVM", style: "" },
+      { label: "REST API", style: "" },
+      { label: "Room Database", style: "" },
+      { label: "Dagger HILT", style: "" },
+      { label: "Coroutines", style: "" },
+    ],
+    githubUrl: "https://github.com/qyupaww/digidex",
+    isPlaceholder: false
+  },
+  {
     icon: "+",
     title: "Coming soon",
     desc: "Next project is in the works. Stay tuned!",
@@ -69,10 +85,10 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
-  { group: "Core", items: ["Dart", "Flutter"] },
+  { group: "Core", items: ["Dart", "Flutter", "|", "Kotlin", "Jetpack Compose"] },
   { group: "Architecture & State", items: ["Clean Architecture", "Atomic Design Pattern", "Dependency Injection (GetIt)", "BLoC", "Cubit"] },
   { group: "Testing", items: ["Unit Testing", "Widget Testing"] },
-  { group: "Familiar With", items: ["Local Storage", "Localization", "Firebase", "Firestore", "Flavors", "GoRouter", "RevenueCat", "AdMob", "Play Console", "Figma", "Shorebird", "Postman", "Git", "GitHub", "CI/CD", "REST API", "Morpheme Lite"] }
+  { group: "Familiar With", items: ["Git", "GitHub", "REST API", "Firebase", "Firestore", "CI/CD", "Local Storage", "GoRouter", "Flavors", "Localization", "Morpheme Lite", "RevenueCat", "AdMob", "Play Console", "Shorebird", "Android Studio", "Postman", "Figma"] }
 ];
 
 const CONTACTS = [
