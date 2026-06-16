@@ -85,7 +85,7 @@ const PROJECTS = [
 ];
 
 const SKILLS = [
-  { group: "Core", items: ["Dart", "Flutter", "|", "Kotlin", "Jetpack Compose"] },
+  { group: "Languages & Frameworks", items: ["Dart", "Flutter", "|", "Kotlin", "Jetpack Compose"] },
   { group: "Architecture & State", items: ["Clean Architecture", "Atomic Design Pattern", "Dependency Injection (GetIt)", "BLoC", "Cubit", "|", "MVVM", "Dagger HILT"] },
   { group: "Testing", items: ["Unit Testing", "Widget Testing"] },
   { group: "Framework Ecosystem", items: ["GoRouter", "Flavors", "Localization", "Morpheme Lite", "Shorebird", "Local Storage", "|", "Room Database", "Coroutines"] },
