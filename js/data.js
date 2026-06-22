@@ -74,6 +74,22 @@ const PROJECTS = [
     isPlaceholder: false
   },
   {
+    icon: "📱",
+    title: "Fanimex - Anime Tracker",
+    desc: "An offline-first anime database and tracker built with Flutter and Morpheme Lite. Users can discover anime via the public Jikan REST API, manage their Watchlist, track Watched history, and save Favorites locally using SQLite database.",
+    tags: [
+      { label: "Flutter", style: "" },
+      { label: "Morpheme Lite", style: "" },
+      { label: "REST API", style: "" },
+      { label: "SQLite", style: "" },
+      { label: "Clean Architecture", style: "" },
+      { label: "Cubit", style: "" },
+      { label: "Atomic Design Pattern", style: "" }
+    ],
+    downloadUrl: "https://drive.google.com/file/d/1qf7leyRtY6qHbTujEJvuO1MuGPJw7QQD/view?usp=drive_link",
+    isPlaceholder: false
+  },
+  {
     icon: "+",
     title: "Coming soon",
     desc: "Next project is in the works. Stay tuned!",

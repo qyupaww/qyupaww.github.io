@@ -16,6 +16,7 @@ function renderProjects() {
             </div>
             <div>
               ${proj.playstoreUrl ? `<a href="${proj.playstoreUrl}" target="_blank" class="btn dark" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem;">Get it on Play Store</a>` : ''}
+              ${proj.downloadUrl ? `<a href="${proj.downloadUrl}" target="_blank" class="btn dark" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem; background-color: #2ea44f; color: white; border-color: #2ea44f;">Download APK</a>` : ''}
               ${proj.githubUrl ? `<a href="${proj.githubUrl}" target="_blank" class="btn" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem;">View on GitHub</a>` : ''}
             </div>
           </div>
@@ -33,6 +34,7 @@ function renderProjects() {
             </div>
             <div>
               ${proj.playstoreUrl ? `<a href="${proj.playstoreUrl}" target="_blank" class="btn dark" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem;">Get it on Play Store</a>` : ''}
+              ${proj.downloadUrl ? `<a href="${proj.downloadUrl}" target="_blank" class="btn dark" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem; background-color: #2ea44f; color: white; border-color: #2ea44f;">Download APK</a>` : ''}
               ${proj.githubUrl ? `<a href="${proj.githubUrl}" target="_blank" class="btn" style="font-size: 11px; padding: 6px 12px; margin-top: 0.5rem;">View on GitHub</a>` : ''}
             </div>
           </div>
