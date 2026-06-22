@@ -86,7 +86,7 @@ const PROJECTS = [
       { label: "Cubit", style: "" },
       { label: "Atomic Design Pattern", style: "" }
     ],
-    downloadUrl: "https://drive.google.com/file/d/1qf7leyRtY6qHbTujEJvuO1MuGPJw7QQD/view?usp=drive_link",
+    downloadUrl: "https://drive.usercontent.google.com/download?id=1qf7leyRtY6qHbTujEJvuO1MuGPJw7QQD&export=download&confirm=t",
     isPlaceholder: false
   },
   {
