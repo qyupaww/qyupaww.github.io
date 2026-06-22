@@ -43,7 +43,7 @@ const PROJECTS = [
   },
   {
     icon: "📱",
-    title: "POKETTER",
+    title: "Poketter - Pokedex App",
     desc: "A Pokedex app Backed by PokeAPI showcasing production-grade Flutter architecture — Clean Architecture, BLoC state management, full test coverage, and CI/CD pipelines.",
     tags: [
       { label: "Flutter", style: "" },
@@ -59,7 +59,7 @@ const PROJECTS = [
   },
   {
     icon: "📱",
-    title: "Digidex",
+    title: "Digidex - Digimon Encyclopedia App",
     desc: "A comprehensive Digimon encyclopedia built with modern Android development standards. Showcasing a 100% Jetpack Compose. Features include an offline-first architecture powered by Room database caching, highly optimized debounced search using Coroutines & Flow, and robust state management with MVVM.",
     tags: [
       { label: "Kotlin", style: "" },
